@@ -3,7 +3,7 @@
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
+ADMINS = ( 
     # ('Your Name', 'your_email@example.com'),
 )
 

@@ -7,10 +7,14 @@ from article.views import HelloTemplate
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^hello/$', 'article.views.hello', name='hello'),
-    url(r'^hello_template/$', 'article.views.hello_template', name='hello_template'),
-    url(r'^hello_template_simple/$', 'article.views.hello_template_simple', name="hello_template_simple"),
-    url(r'hello_class_view/$', HelloTemplate.as_view()),
+    (r'^articles/', include('article.urls')),
+
+
+    # url(r'^hello/$', 'article.views.hello', name='hello'),
+    # url(r'^hello_template/$', 'article.views.hello_template', name='hello_template'),
+    # url(r'^hello_template_simple/$', 'article.views.hello_template_simple', name="hello_template_simple"),
+    # url(r'hello_class_view/$', HelloTemplate.as_view()),
+
     # url(r'^$', 'Blog.views.home', name='home'),
     # url(r'^Blog/', include('Blog.foo.urls')),
 
